@@ -23,14 +23,16 @@ Bootstrap
 Axios 
 
 Front End Database: React
-a. 	Install create-react-app, bootstrap, axios
+a. 	Install create-react-app, bootstrap, axios, react-router-dom, 
 b.	Developed react database setup Components and Navbar
 c.	Add new property to package.json after step g. in "Back End Database".
 	"proxy": "http://localhost:5000/" 
 (This connects back-end server to front-end and when you send api request from our components.)
+d. 	Develop home screen and install react-router-dom, Add function to App.js.
+e. 	
 
 Back End Database: NodeJs
-a.	Install npm init, npm i express, npm nodemon, mongoose compass, mongoose, router
+a.	Install npm init, npm i express, npm nodemon, mongoose compass, mongoose, router, 
 b. 	Develop and setup Server.js
 c. 	Install mongoose, setup database in mongoose atlas and connect database access to mongoose compass.
 d. 	Connect mongoose to Server.js
