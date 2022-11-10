@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {Modal, Button} from 'react-bootstrap';
+// import {Modal, Button} from 'react-bootstrap';
 
 function Room({ room }) {
 
@@ -26,7 +26,7 @@ function Room({ room }) {
                 </div>
             </div>
 
-            <Button variant="primary" onClick={handleShow}>
+            {/* <Button variant="primary" onClick={handleShow}>
                 Launch demo modal
             </Button>
 
@@ -43,7 +43,7 @@ function Room({ room }) {
                         Save Changes
                     </Button>
                 </Modal.Footer>
-            </Modal>
+            </Modal> */}
 
 
 
