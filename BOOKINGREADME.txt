@@ -23,13 +23,22 @@ Bootstrap
 Axios 
 
 Front End Database: React
-a. 	Install create-react-app, bootstrap, axios, react-router-dom, 
+a. 	Install create-react-app, bootstrap, axios, react-router-dom, react-bootstrap, react-spinners, antDesign, Moment.js, 
 b.	Developed react database setup Components and Navbar
 c.	Add new property to package.json after step g. in "Back End Database".
 	"proxy": "http://localhost:5000/" 
 (This connects back-end server to front-end and when you send api request from our components.)
 d. 	Develop home screen and install react-router-dom, Add function to App.js.
-e. 	
+e. 	Style home screen in index.css and update style code on Room.js And Home.js(container and return map div).
+f.	Develop Room Modal,utilizing Bootstrap Modal. First, created Hooks on Room component.
+     		const [show, setShow] = useState(false);
+    		const handleClose = () => setShow(false);
+    		const handleShow = () => setShow(true);
+g. Add Modal style from react-bootstrap and add functionality to View Details Button.
+	<button className="btn btn-primary" onClick={handleShow}>View Details</button>
+h.	Develop Booking screen style and add Booking function.
+i	Develop Error, Loading, and Success Components.
+		
 
 Back End Database: NodeJs
 a.	Install npm init, npm i express, npm nodemon, mongoose compass, mongoose, router, 
@@ -54,6 +63,9 @@ freeCodeCamp
 Bootstrap.com
 W3Schools
 MDN.com
+moment.js
+antDesign
+
 
 
 
@@ -64,7 +76,13 @@ CHALLENGES:
 a. Error debugging in Postman 404 message in duration of testing API, discovered a deficiency in my code to access the routes. "app.use"
 b. Decepreciated library dependencies.
 
-
+FAVORABLE PART OF PROCESS:
+a. Getting the Mongoose Database connected with Backend App.
+b. Development of API in a JSON file.
+c. Implementation of developed API.
+d. How to utlized div style on a button <div style={{ float: "right" }}>. (Floats button to the right of page)
+e. !important Rule in CSS, (Gives increased importance to propery/value than average. This overrides previous styling rules that specific property on that element.)
+f. Modal functionality of the View Details button.
 
 
 FEATURES TO IMPLEMENT IN THE FUTURE: 
