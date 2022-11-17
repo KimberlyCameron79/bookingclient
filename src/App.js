@@ -7,6 +7,7 @@ import Booking from './screens/Booking';
 import Register from './screens/Register';
 import Login from './screens/Login';
 import Profile from './screens/Profile';
+import ProfileScreen from './screens/ProfileScreen';
 function App() {
   return (
     <div className="App">
@@ -17,7 +18,8 @@ function App() {
       <Route path="/book/:roomid/:fromdate/:todate" element={<Booking />} />
       <Route path="/register" element={<Register />} />
       <Route path="/login" element={<Login />}/>
-      <Route path="/profile" element={<Profile />}/>
+      <Route path="/profile" element={<ProfileScreen />}/>
+     
         
       </Routes>
       </BrowserRouter>
