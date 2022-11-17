@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import { Modal, Button, Carousel } from 'react-bootstrap';
-import  {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Room({ room, fromdate, todate }) {
 
@@ -23,9 +23,14 @@ function Room({ room, fromdate, todate }) {
                 </b>
 
                 <div style={{ float: "right" }}>
-                    <Link to={`book/${room._id}/${fromdate}/${todate}`}>
-                    <button className="btn btn-primary m-2">Book Now</button>
-                    </Link>
+
+                   {fromdate && todate}  {
+                        <Link to={`book/${room._id}/${fromdate}/${todate}`}>
+                            <button className="btn btn-primary m-2">Book Now</button>
+                        </Link>
+
+                    }
+
                     <button className="btn btn-primary" onClick={handleShow}>View Details</button>
                 </div>
             </div>
@@ -38,17 +43,17 @@ function Room({ room, fromdate, todate }) {
                 </Modal.Header>
                 <Modal.Body>
                     <Carousel prevLabel='' nextLabel=''>
-                        {room.imageurls.map(url=>{
-                           return <Carousel.Item key={url}>
-                           <img
-                               className="d-block w-100 bigimg"
-                               src={url}
-                               alt="First slide"
-                           />
-                           
-                       </Carousel.Item>
+                        {room.imageurls.map(url => {
+                            return <Carousel.Item key={url}>
+                                <img
+                                    className="d-block w-100 bigimg"
+                                    src={url}
+                                    alt="First slide"
+                                />
+
+                            </Carousel.Item>
                         })}
-                        
+
                     </Carousel>
                     <p>{room.description}</p>
                 </Modal.Body>
