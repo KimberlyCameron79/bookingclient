@@ -75,9 +75,6 @@ CHALLENGES:
 
 a. Error debugging in Postman 404 message in duration of testing API, discovered a deficiency in my code to access the routes. "app.use"
 b. Decepreciated library dependencies.
-c. axios post request 404 errors.
-d. Booking.js functionality, the ability to choose a room to reserve.
-e. 
 
 FAVORABLE PART OF PROCESS:
 a. Getting the Mongoose Database connected with Backend App.
@@ -89,14 +86,6 @@ f. Modal functionality of the View Details button.
 
 
 FEATURES TO IMPLEMENT IN THE FUTURE: 
-Functionality of Registration and Login
-Functionality of Booking reservations.
-Payment functiionality
-Room snapshot image feature updated per room with room status.
-Funcitionality of filtered method of users.
-Functionality to add, update, and delete the rooms.
-
-
 
 
 
