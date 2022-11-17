@@ -1,105 +1,70 @@
-README
+# Getting Started with Create React App
 
-PROJECT TITLE:  KDC AIRBNB
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-DESCRIPTON:
+## Available Scripts
 
-This is a full stack MERN Booking Reservation App for KDC AirBnB. This application reserves AirBnB vacancies for consumers.
-1. Search for vacancies available.
-2. Reserve vacancies for occupancy.
-3. Modify or Cancel Request.
+In the project directory, you can run:
 
+### `npm start`
 
-TECHNOLOGIES:
-MERN
-MongoDB(Atlas, Compass)
-Express
-React
-NodeJs
-JavaScript
-HTML
-CSS
-Bootstrap
-Axios 
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-Front End Database: React
-a. 	Install create-react-app, bootstrap, axios, react-router-dom, react-bootstrap, react-spinners, antDesign, Moment.js, 
-b.	Developed react database setup Components and Navbar
-c.	Add new property to package.json after step g. in "Back End Database".
-	"proxy": "http://localhost:5000/" 
-(This connects back-end server to front-end and when you send api request from our components.)
-d. 	Develop home screen and install react-router-dom, Add function to App.js.
-e. 	Style home screen in index.css and update style code on Room.js And Home.js(container and return map div).
-f.	Develop Room Modal,utilizing Bootstrap Modal. First, created Hooks on Room component.
-     		const [show, setShow] = useState(false);
-    		const handleClose = () => setShow(false);
-    		const handleShow = () => setShow(true);
-g. Add Modal style from react-bootstrap and add functionality to View Details Button.
-	<button className="btn btn-primary" onClick={handleShow}>View Details</button>
-h.	Develop Booking screen style and add Booking function.
-i	Develop Error, Loading, and Success Components.
-		
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-Back End Database: NodeJs
-a.	Install npm init, npm i express, npm nodemon, mongoose compass, mongoose, router, 
-b. 	Develop and setup Server.js
-c. 	Install mongoose, setup database in mongoose atlas and connect database access to mongoose compass.
-d. 	Connect mongoose to Server.js
-e.	Create api and test it in Postman
-f.	Connect api to router in routes.
-g.	Connect back-end database to front-end database.
+### `npm test`
 
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
+### `npm run build`
 
-HOW TO INSTALL AND RUN APPLICATION:
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-HOW TO USE THE BOOKING RESERVATION APP:
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+### `npm run eject`
 
-RESOURCES:
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-freeCodeCamp
-Bootstrap.com
-W3Schools
-MDN.com
-moment.js
-antDesign
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
+## Learn More
 
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-CHALLENGES:
+### Code Splitting
 
-a. Error debugging in Postman 404 message in duration of testing API, discovered a deficiency in my code to access the routes. "app.use"
-b. Decepreciated library dependencies.
-c. axios post request 404 errors.
-d. Booking.js functionality, the ability to choose a room to reserve.
-e. 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-FAVORABLE PART OF PROCESS:
-a. Getting the Mongoose Database connected with Backend App.
-b. Development of API in a JSON file.
-c. Implementation of developed API.
-d. How to utlized div style on a button <div style={{ float: "right" }}>. (Floats button to the right of page)
-e. !important Rule in CSS, (Gives increased importance to propery/value than average. This overrides previous styling rules that specific property on that element.)
-f. Modal functionality of the View Details button.
+### Analyzing the Bundle Size
 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-FEATURES TO IMPLEMENT IN THE FUTURE: 
-Functionality of Registration and Login
-Functionality of Booking reservations.
-Payment functiionality
-Room snapshot image feature updated per room with room status.
-Funcitionality of filtered method of users.
-Functionality to add, update, and delete the rooms.
+### Making a Progressive Web App
 
-![image](https://user-images.githubusercontent.com/110206975/202363547-a468294e-79b8-4e94-bfd8-2000614be5ef.png)
-![image](https://user-images.githubusercontent.com/110206975/202363627-9e83ab41-5f34-4873-924e-a3523d028c52.png)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
+### Advanced Configuration
 
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
+### Deployment
 
-MIT License:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
